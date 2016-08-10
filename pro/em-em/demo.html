@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+		<link rel="stylesheet" href="../../lib/reset.css" />
+		<link rel="stylesheet" href="./css/demo.css" />
+		<title>em-em</title>
+	</head>
+	<body>
+		<header>
+			<i class="back"></i>
+			<h1>发现</h1>
+			<i class="option"></i>
+		</header>
+		<div class="container">
+			<div class="row single friends">朋友圈</div>
+			<div class="row double twoDCode">扫一扫</div>
+			<div class="row double swag">摇一摇</div>
+			<div class="row double nearby">附近的人</div>
+			<div class="row double floater">漂流瓶</div>
+			<div class="row double shop">购物</div>
+			<div class="row double game">游戏</div>
+		</div>
+		<footer>
+		</footer>
+		<script>
+			function setRem(){
+				document.documentElement.style.fontSize = window.innerWidth / 20 + "px";
+		}
+		window.onresize = function(){
+			setRem();
+		};
+		setRem();
+		</script>
+	</body>
+</html>
+
