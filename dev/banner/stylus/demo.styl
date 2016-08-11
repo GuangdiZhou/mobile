@@ -11,16 +11,21 @@
 		height @height 
 		background-size 100% 100%
 		background-repeat no-repeat
-		opacity 0
 		&:first-of-type
 			left 0
 			opacity 1
+		&:not(:first-of-type)
+			left 20rem
 		&.previous
 			animation previous .5s forwards
-			opacity 1
 		&.current
 			animation current .5s forwards
-			opacity 1
+		&.init
+			animation init .25s forwards
+		&.ltr
+			animation ltr .25s forwards
+		&.rtl
+			animation rtl .25s forwards
 	.indicator
 		position absolute
 		bottom .6rem
@@ -45,3 +50,12 @@
 		left 20rem
 	to
 		left 0
+@keyframes init
+	to 
+		left 0
+@keyframes ltr
+	to 
+		left 20rem
+@keyframes rtl
+	to 
+		left -20rem
